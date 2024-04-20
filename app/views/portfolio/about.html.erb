@@ -1,1 +1,77 @@
-<h1>About</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Md Farukuzzaman </h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-time cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <%= link_to "Home", index_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "About", about_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Work", work_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Contact Me", contact_path %>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div id="about">
+        <section class="about">
+            <div class="about-text">
+                <h1 class="my-heading">About Me</h1>
+                <p class="lead-paragraph">I am a senior Computer Science student. My concentration is cybersecurity.
+                    I like to travel. My favorite hobby is reading. I am also interested in history and different
+                    cultures.
+                </p>
+
+            </div>
+            <div class="about-image">
+                <%= image_tag ("my_cute_sloth.jpg"), class: "small-image" %>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved |
+                This portfolio website template is created
+                by Md Farukuzzaman.
+            </h4>
+
+        </div>
+        </div>
+    </footer>
+    <div class="social-links">
+        <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+    </div>
+</body>
+</html>

@@ -1,1 +1,103 @@
-<h1>Contact</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Md Farukuzzaman </h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-time cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <%= link_to "Home", index_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "About", about_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Work", work_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Contact Me", contact_path %>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Contact me section -->
+    <div class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                        rows="10">
+                  </textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">example@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">9015156469</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">FAX</h5>
+                    <p class="contact-text">+901-567-8990</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">Memphis, TN</p>
+                    <p>4th Floor8 Lower</p>
+                    <p>6537 Gallan Ct, 38134</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved |
+                This portfolio website template is created
+                by Md Farukuzzaman.
+            </h4>
+
+        </div>
+        </div>
+    </footer>
+    <div class="social-links">
+        <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+    </div>
+</body>
+</html>

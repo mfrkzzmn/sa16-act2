@@ -1,1 +1,241 @@
-<h1>Work</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Md Farukuzzaman </h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-time cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <%= link_to "Home", index_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "About", about_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Work", work_path %>
+                    </li>
+                    <li class="menu-list-items">
+                        <%= link_to "Contact Me", contact_path %>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Portfolios</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <%= image_tag ("my_cute_horse.webp"), class: "small-image" %>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para blue-text">Designing</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <%= image_tag ("my_red_roses.jpeg"), class: "small-image" %>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Web Development
+                        </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <%= image_tag ("my_pink_roses.jpeg"), class: "small-image" %>
+                        </div>
+                        <h3 class="greet-heading blue-text">Photo Gallary</h3>
+                        <p class="small-para blue-text">Optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <%= image_tag ("my_pink1_roses.jpeg"), class: "small-image" %>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Content Creator
+                        </h3>
+                        <p class="small-para blue-text">writing</p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <%= image_tag ("my_flower_collection.jpeg"), class: "small-image" %>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Video Editing
+                        </h3>
+                        <p class="small-para blue-text">Editing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <!-- <div class="services-heading">
+            <h1 class="my-heading text-center"> Portfolios</h1>
+        </div> -->
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para">
+                            Web development refers to the creating,
+                            building, and maintaining
+                            of websites.
+                        </p>
+                        <p class="small-para">
+                            It includes aspects such as
+                            web design, web publishing,
+                            web programming, and database management.
+                            It is the creation of an
+                            application that works over the internet
+                            i.e. websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Web Development
+                        </h3>
+                        <p class="small-para">
+                            Web development refers to the creating,
+                            building, and maintaining
+                            of websites. It includes aspects such as
+                            web design, web publishing,
+                            web programming, and database management.
+                            It is the creation of an
+                            application that works over the internet
+                            i.e. websites.
+                        </p>
+                        <p class="small-para">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Photo Gallary</h3>
+                        <p class="small-para">
+                            Photo Gallery provides a number of view options to organize your galleries and albums in
+                            beautiful views, including Slideshow, Thumbnails, Masonry, Image Browser, Extended and
+                            Compact Album, Blog Style, Mosaic.
+                            The layouts give you the flexibility to customize them to match your needs.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Content Creator
+                        </h3>
+                        <p class="small-para">
+                            Learn the ins and outs of being a digital content creator and how to get started yourself.
+                            A content creator is someone who creates entertaining or educational material to be
+                            expressed through any medium or channel.
+
+
+                        </p>
+                        <p class="small-para">
+                            writing, editing, blogging and updating content for everything from brochures , marketing
+                            and promotional materials to emails, websites, ...more.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Video Editing
+                        </h3>
+                        <p class="small-para">
+                            Make your own video from scratch, edit it and add music — all in one screen! Our seamless
+                            video editor allows you to manage the added media easily with the help of multi-track
+                            timeline
+                        </p>
+                        <p class="small-para">
+                            I enjoy working as a video editor.
+                            You can manually change the position of both images and videos creating a
+                            picture-in-picture, a split-screen video or a collage of any other composition.
+                            It has never been so easy!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved |
+                This portfolio website template is created
+                by Md Farukuzzaman.
+            </h4>
+
+        </div>
+        </div>
+    </footer>
+    <div class="social-links">
+        <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+    </div>
+</body>
+</html>
